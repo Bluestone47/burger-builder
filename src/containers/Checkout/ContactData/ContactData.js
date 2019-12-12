@@ -6,7 +6,6 @@ import Input from '../../../components/UI/Input/Input'
 import axios from '../../../axios-orders';
 
 import classes from './ContactData.module.css'
-import { is } from '@babel/types';
 
 class ContactData extends Component {
   state = {
@@ -176,8 +175,8 @@ class ContactData extends Component {
         ))}
         <Button
           btnType="Success"
-          disable={!this.state.formIsValid}
-          clicked={this.orderHandler}>ORDER</Button>
+          disabled={!this.state.formIsValid}
+        >ORDER</Button>
       </form>
     );
     if (this.state.loading) {
