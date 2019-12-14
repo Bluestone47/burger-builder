@@ -76,7 +76,7 @@ export const fetchOrders = () => {
         dispatch(fetchOrdersSuccess(fetchedOrders))
       })
       .catch(err => {
-        dispatch(fetchOrdersFail(error))
+        dispatch(fetchOrdersFail(err))
       })
   }
 }
